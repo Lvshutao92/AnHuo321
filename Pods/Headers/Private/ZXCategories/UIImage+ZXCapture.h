@@ -1,0 +1,1 @@
+../../../ZXCategories/ZXCategories/Classes/UIKit/UIImage/UIImage+ZXCapture.h

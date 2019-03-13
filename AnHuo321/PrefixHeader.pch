@@ -1,0 +1,117 @@
+//
+//  PrefixHeader.pch
+//  AnHuo321
+//
+//  Created by 吕书涛 on 2019/3/13.
+//  Copyright © 2019 macbookpro. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Header.h"
+#import <AFNetworking/AFNetworking.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <XYQRegexPattern/XYQRegexPatternHelper.h>
+#import <UIImageView+WebCache.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Masonry/Masonry.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <SDCycleScrollView/SDCycleScrollView.h>
+/// iOS 9前的框架
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
+/// iOS 9的新框架
+#import <ContactsUI/ContactsUI.h>
+
+
+
+#import "MainNavigationViewController.h"
+#import "MainTabbarViewController.h"
+#import "Manager.h"
+#import "SQCustomButton.h"
+#import "CustomBtn.h"
+#import "PYSearch.h"
+
+
+
+
+
+//判断 iOS 9 或更高的系统版本
+#define IOS_VERSION_9_OR_LATER (([[[UIDevice currentDevice] systemVersion] floatValue] >=9.0)? (YES):(NO))
+//获取当前语言
+#define LRCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+//由角度转换弧度 由弧度转换角度
+#define LRDegreesToRadian(x) (M_PI * (x) / 180.0)
+#define LRRadianToDegrees(radian) (radian*180.0)/(M_PI)
+//设置 view 圆角和边框
+#define LRViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+//弱引用/强引用
+#define LRWeakSelf(type)   __weak typeof(type) weakSelf = type;
+#define LRStrongSelf(type)  __strong typeof(type) strongSelf = type;
+//获取屏幕 宽度、高度
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+//以iPhone6为基础
+#define SCALE_WIDTH SCREEN_WIDTH/375
+#define SCALE_HEIGHT SCREEN_HEIGHT/667
+//获取系统版本
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+#define CurrentSystemVersion [[UIDevice currentDevice] systemVersion]
+
+//rgb alpha颜色
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define baseColor    [UIColor colorWithRed:227/255.0f green:9/255.0f blue:29/255.0f alpha:1]
+
+
+#define W_CA(a,b) [UIColor colorWithWhite:a alpha:b]
+
+//获取当前语言
+#define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+//判断设备的操做系统ios8.0
+#define IOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0])
+//根视图
+#define KWINDOW_ROOT [[[UIApplication sharedApplication] delegate] window].rootViewController
+//屏幕大小
+#define kScreenBounds [UIScreen mainScreen].bounds
+//字体大小
+#define FONT(s)       [UIFont systemFontOfSize:s]
+
+
+#define YYISiPhoneX [[UIScreen mainScreen] bounds].size.width >=375.0f && [[UIScreen mainScreen] bounds].size.height >=812.0f&& YYIS_IPHONE
+#define YYIS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//状态栏高度
+#define kStatusBarHeight (CGFloat)(YYISiPhoneX?(44):(20))
+//导航栏高度
+#define kNavBarHBelow7 (44)
+//状态栏和导航栏总高度
+#define kNavBarHAbove7 (CGFloat)(YYISiPhoneX?(88):(64))
+//TabBar高度
+#define kTabBarHeight (CGFloat)(YYISiPhoneX?(49+34):(49))
+//顶部安全区域远离高度
+#define kTopBarSafeHeight (CGFloat)(YYISiPhoneX?(44):(0))
+//底部安全区域远离高度
+#define kBottomSafeHeight (CGFloat)(YYISiPhoneX?(34):(0))
+//iPhoneX的状态栏高度差值
+#define kTopBarDifHeight (CGFloat)(YYISiPhoneX?(24):(0))
+
+
+
+
+
+
+
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
