@@ -9,6 +9,9 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "AHControll.h"
+#import "GlobleStting.h"
+
 #import "Header.h"
 #import <AFNetworking/AFNetworking.h>
 #import <MJRefresh/MJRefresh.h>
@@ -33,6 +36,7 @@
 #import "SQCustomButton.h"
 #import "CustomBtn.h"
 #import "PYSearch.h"
+#import "LoginViewController.h"
 
 
 
@@ -67,7 +71,7 @@
 
 //rgb alpha颜色
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
-#define baseColor    [UIColor colorWithRed:227/255.0f green:9/255.0f blue:29/255.0f alpha:1]
+#define baseColor    [UIColor colorWithRed:190/255.0f green:8/255.0f blue:7/255.0f alpha:1]
 
 
 #define W_CA(a,b) [UIColor colorWithWhite:a alpha:b]

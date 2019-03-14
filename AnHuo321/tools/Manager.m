@@ -23,6 +23,13 @@ static Manager *manager = nil;
 
 
 
+
+
+
+
+
+
+
 //字典转json字符串
 +(NSString *)convertToJsonData:(NSDictionary *)dict{
     NSError *error;

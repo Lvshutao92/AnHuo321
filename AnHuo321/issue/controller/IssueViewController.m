@@ -44,8 +44,13 @@
 }
 - (void)clickFaBu{
     
-    
-    NSLog(@"-----%@",photoview.imgsArr);
+    if ([GlobleStting getusername].length>0) {
+        
+    }else{
+        LoginViewController *vc = [[LoginViewController alloc]init];
+        vc.title = @"账号登录";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
 }
 //实现代理方法

@@ -32,34 +32,91 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableview];
     self.tableview.tableHeaderView = self.headerView;
+    
+    userImg = [AHControll createImageViewWithFrame:CGRectMake(SCREEN_WIDTH/2-50, 35, 100, 100) ImageName:@""];
+    [self.headerView addSubview:userImg];
+    
+    userName = [AHControll createLabelWithFrame:CGRectMake(0, 145, SCREEN_WIDTH, 20) Font:16 Text:@"" textColor:UIColor.blackColor NSTextAlignment:NSTextAlignmentCenter];
+    [_headerView addSubview:userName];
     // Do any additional setup after loading the view.
 }
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if ([GlobleStting getusername].length>0) {
+        
+    }else{
+        userName.text = @"登录I注册";
+        userImg.image = [UIImage imageNamed:@"tx"];
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section==0) {
         if (indexPath.row==0) {
-            MyGuanZhuViewController *vc = [[MyGuanZhuViewController alloc]init];
-            vc.title = @"关注";
-            [self.navigationController pushViewController:vc animated:YES];
+            if ([GlobleStting getusername].length>0) {
+                MyGuanZhuViewController *vc = [[MyGuanZhuViewController alloc]init];
+                vc.title = @"关注";
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                LoginViewController *vc = [[LoginViewController alloc]init];
+                vc.title = @"账号登录";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }else if (indexPath.row==1) {
-            OrderViewController *vc = [[OrderViewController alloc]init];
-            vc.title = @"我的订单";
-            [self.navigationController pushViewController:vc animated:YES];
+            if ([GlobleStting getusername].length>0) {
+                OrderViewController *vc = [[OrderViewController alloc]init];
+                vc.title = @"我的订单";
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                LoginViewController *vc = [[LoginViewController alloc]init];
+                vc.title = @"账号登录";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }else if (indexPath.row==2) {
-            AddrViewController *vc = [[AddrViewController alloc]init];
-            vc.title = @"收货地址";
-            [self.navigationController pushViewController:vc animated:YES];
+            if ([GlobleStting getusername].length>0) {
+                AddrViewController *vc = [[AddrViewController alloc]init];
+                vc.title = @"收货地址";
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                LoginViewController *vc = [[LoginViewController alloc]init];
+                vc.title = @"账号登录";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }else{
-            InformationViewController *vc = [[InformationViewController alloc]init];
-            vc.title = @"通知";
-            [self.navigationController pushViewController:vc animated:YES];
+            if ([GlobleStting getusername].length>0) {
+                InformationViewController *vc = [[InformationViewController alloc]init];
+                vc.title = @"通知";
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                LoginViewController *vc = [[LoginViewController alloc]init];
+                vc.title = @"账号登录";
+                [self.navigationController pushViewController:vc animated:YES];
+            }
         }
     }else{
-        SetViewController *vc = [[SetViewController alloc]init];
-        vc.title = @"设置";
-        [self.navigationController pushViewController:vc animated:YES];
+        if ([GlobleStting getusername].length>0) {
+            SetViewController *vc = [[SetViewController alloc]init];
+            vc.title = @"设置";
+            [self.navigationController pushViewController:vc animated:YES];
+        }else{
+            LoginViewController *vc = [[LoginViewController alloc]init];
+            vc.title = @"账号登录";
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
 }
 

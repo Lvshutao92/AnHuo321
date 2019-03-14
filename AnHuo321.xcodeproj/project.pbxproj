@@ -54,6 +54,19 @@
 		75FB054922394A9C002CD3BD /* UpdatePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB054822394A9C002CD3BD /* UpdatePasswordViewController.m */; };
 		75FB054D22394B40002CD3BD /* MyGuanZhuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB054C22394B40002CD3BD /* MyGuanZhuViewController.m */; };
 		75FB055122394B86002CD3BD /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB055022394B86002CD3BD /* SetViewController.m */; };
+		75FB055D223A70C0002CD3BD /* XHSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB0559223A70C0002CD3BD /* XHSegmentItem.m */; };
+		75FB055E223A70C0002CD3BD /* XHSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB055A223A70C0002CD3BD /* XHSegmentControl.m */; };
+		75FB055F223A70C0002CD3BD /* XHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB055B223A70C0002CD3BD /* XHSegmentViewController.m */; };
+		75FB0571223A7104002CD3BD /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB056F223A7104002CD3BD /* RegisterViewController.m */; };
+		75FB0578223A7110002CD3BD /* EmoalRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB0573223A710F002CD3BD /* EmoalRegisterViewController.m */; };
+		75FB0579223A7110002CD3BD /* ZhanghaoRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB0576223A7110002CD3BD /* ZhanghaoRegisterViewController.m */; };
+		75FB057A223A7110002CD3BD /* PhoneRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB0577223A7110002CD3BD /* PhoneRegisterViewController.m */; };
+		75FB0581223A7120002CD3BD /* GetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB057B223A711F002CD3BD /* GetPasswordViewController.m */; };
+		75FB0582223A7120002CD3BD /* PhoneGetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB057D223A711F002CD3BD /* PhoneGetPasswordViewController.m */; };
+		75FB0583223A7120002CD3BD /* EmailGetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB057E223A7120002CD3BD /* EmailGetPasswordViewController.m */; };
+		75FB0586223A72A1002CD3BD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB0585223A72A1002CD3BD /* LoginViewController.m */; };
+		75FB0589223A73E6002CD3BD /* AHControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB0588223A73E6002CD3BD /* AHControll.m */; };
+		75FB058F223A7748002CD3BD /* GlobleStting.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FB058E223A7748002CD3BD /* GlobleStting.m */; };
 		F91EAC442D01E9A75534C8D8 /* libPods-AnHuo321.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1468BD5F13E58FD1E076BEB5 /* libPods-AnHuo321.a */; };
 /* End PBXBuildFile section */
 
@@ -165,6 +178,32 @@
 		75FB054C22394B40002CD3BD /* MyGuanZhuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyGuanZhuViewController.m; sourceTree = "<group>"; };
 		75FB054F22394B86002CD3BD /* SetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
 		75FB055022394B86002CD3BD /* SetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		75FB0557223A70C0002CD3BD /* XHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentViewController.h; sourceTree = "<group>"; };
+		75FB0558223A70C0002CD3BD /* XHSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentControl.h; sourceTree = "<group>"; };
+		75FB0559223A70C0002CD3BD /* XHSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentItem.m; sourceTree = "<group>"; };
+		75FB055A223A70C0002CD3BD /* XHSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentControl.m; sourceTree = "<group>"; };
+		75FB055B223A70C0002CD3BD /* XHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentViewController.m; sourceTree = "<group>"; };
+		75FB055C223A70C0002CD3BD /* XHSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentItem.h; sourceTree = "<group>"; };
+		75FB056F223A7104002CD3BD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		75FB0570223A7104002CD3BD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		75FB0572223A710F002CD3BD /* ZhanghaoRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhanghaoRegisterViewController.h; sourceTree = "<group>"; };
+		75FB0573223A710F002CD3BD /* EmoalRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmoalRegisterViewController.m; sourceTree = "<group>"; };
+		75FB0574223A710F002CD3BD /* EmoalRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmoalRegisterViewController.h; sourceTree = "<group>"; };
+		75FB0575223A710F002CD3BD /* PhoneRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneRegisterViewController.h; sourceTree = "<group>"; };
+		75FB0576223A7110002CD3BD /* ZhanghaoRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhanghaoRegisterViewController.m; sourceTree = "<group>"; };
+		75FB0577223A7110002CD3BD /* PhoneRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneRegisterViewController.m; sourceTree = "<group>"; };
+		75FB057B223A711F002CD3BD /* GetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetPasswordViewController.m; sourceTree = "<group>"; };
+		75FB057C223A711F002CD3BD /* GetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPasswordViewController.h; sourceTree = "<group>"; };
+		75FB057D223A711F002CD3BD /* PhoneGetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneGetPasswordViewController.m; sourceTree = "<group>"; };
+		75FB057E223A7120002CD3BD /* EmailGetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailGetPasswordViewController.m; sourceTree = "<group>"; };
+		75FB057F223A7120002CD3BD /* PhoneGetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneGetPasswordViewController.h; sourceTree = "<group>"; };
+		75FB0580223A7120002CD3BD /* EmailGetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailGetPasswordViewController.h; sourceTree = "<group>"; };
+		75FB0584223A72A1002CD3BD /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		75FB0585223A72A1002CD3BD /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		75FB0587223A73E6002CD3BD /* AHControll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHControll.h; sourceTree = "<group>"; };
+		75FB0588223A73E6002CD3BD /* AHControll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHControll.m; sourceTree = "<group>"; };
+		75FB058D223A7748002CD3BD /* GlobleStting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobleStting.h; sourceTree = "<group>"; };
+		75FB058E223A7748002CD3BD /* GlobleStting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobleStting.m; sourceTree = "<group>"; };
 		B3F8806EBFE920DCA6448938 /* Pods-AnHuo321.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnHuo321.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnHuo321/Pods-AnHuo321.debug.xcconfig"; sourceTree = "<group>"; };
 		B9D53AE5DBE91EF4BD4EEDC6 /* Pods-AnHuo321.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnHuo321.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnHuo321/Pods-AnHuo321.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -440,6 +479,8 @@
 		75ABB7D022391EB000484E9E /* login */ = {
 			isa = PBXGroup;
 			children = (
+				75FB0584223A72A1002CD3BD /* LoginViewController.h */,
+				75FB0585223A72A1002CD3BD /* LoginViewController.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -447,6 +488,14 @@
 		75ABB7D122391EB500484E9E /* register */ = {
 			isa = PBXGroup;
 			children = (
+				75FB0570223A7104002CD3BD /* RegisterViewController.h */,
+				75FB056F223A7104002CD3BD /* RegisterViewController.m */,
+				75FB0574223A710F002CD3BD /* EmoalRegisterViewController.h */,
+				75FB0573223A710F002CD3BD /* EmoalRegisterViewController.m */,
+				75FB0575223A710F002CD3BD /* PhoneRegisterViewController.h */,
+				75FB0577223A7110002CD3BD /* PhoneRegisterViewController.m */,
+				75FB0572223A710F002CD3BD /* ZhanghaoRegisterViewController.h */,
+				75FB0576223A7110002CD3BD /* ZhanghaoRegisterViewController.m */,
 			);
 			path = register;
 			sourceTree = "<group>";
@@ -454,6 +503,12 @@
 		75ABB7D222391EBB00484E9E /* forgetPassword */ = {
 			isa = PBXGroup;
 			children = (
+				75FB0580223A7120002CD3BD /* EmailGetPasswordViewController.h */,
+				75FB057E223A7120002CD3BD /* EmailGetPasswordViewController.m */,
+				75FB057C223A711F002CD3BD /* GetPasswordViewController.h */,
+				75FB057B223A711F002CD3BD /* GetPasswordViewController.m */,
+				75FB057F223A7120002CD3BD /* PhoneGetPasswordViewController.h */,
+				75FB057D223A711F002CD3BD /* PhoneGetPasswordViewController.m */,
 			);
 			path = forgetPassword;
 			sourceTree = "<group>";
@@ -476,6 +531,10 @@
 				75ABB80B223920D400484E9E /* SQCustomButton.m */,
 				7549DC0122393772000E515D /* Manager.h */,
 				7549DC0222393772000E515D /* Manager.m */,
+				75FB0587223A73E6002CD3BD /* AHControll.h */,
+				75FB0588223A73E6002CD3BD /* AHControll.m */,
+				75FB058D223A7748002CD3BD /* GlobleStting.h */,
+				75FB058E223A7748002CD3BD /* GlobleStting.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -483,6 +542,7 @@
 		75ABB7D522391EFF00484E9E /*  thirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				75FB0556223A70C0002CD3BD /* XHSegmentController */,
 				753D49512239296900A62B70 /* 搜索 */,
 			);
 			path = " thirdParty";
@@ -554,6 +614,19 @@
 				75FB055022394B86002CD3BD /* SetViewController.m */,
 			);
 			path = set;
+			sourceTree = "<group>";
+		};
+		75FB0556223A70C0002CD3BD /* XHSegmentController */ = {
+			isa = PBXGroup;
+			children = (
+				75FB0557223A70C0002CD3BD /* XHSegmentViewController.h */,
+				75FB0558223A70C0002CD3BD /* XHSegmentControl.h */,
+				75FB0559223A70C0002CD3BD /* XHSegmentItem.m */,
+				75FB055A223A70C0002CD3BD /* XHSegmentControl.m */,
+				75FB055B223A70C0002CD3BD /* XHSegmentViewController.m */,
+				75FB055C223A70C0002CD3BD /* XHSegmentItem.h */,
+			);
+			path = XHSegmentController;
 			sourceTree = "<group>";
 		};
 		FF84B7FC698EB486E90CA011 /* Pods */ = {
@@ -765,27 +838,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				75FB053F22394A54002CD3BD /* XiaoXiCell.m in Sources */,
+				75FB055E223A70C0002CD3BD /* XHSegmentControl.m in Sources */,
+				75FB0578223A7110002CD3BD /* EmoalRegisterViewController.m in Sources */,
 				75FB052822393DBA002CD3BD /* UIView+Toast.m in Sources */,
 				75ABB8192239216A00484E9E /* HomeModel.m in Sources */,
+				75FB055F223A70C0002CD3BD /* XHSegmentViewController.m in Sources */,
 				753D49712239296900A62B70 /* PYSearchViewController.m in Sources */,
 				75ABB7CB22391E9B00484E9E /* IssueViewController.m in Sources */,
 				753D49752239296900A62B70 /* UIColor+PYExtension.m in Sources */,
 				75FB052C223940BA002CD3BD /* PersonCell.m in Sources */,
 				75FB055122394B86002CD3BD /* SetViewController.m in Sources */,
+				75FB0589223A73E6002CD3BD /* AHControll.m in Sources */,
+				75FB055D223A70C0002CD3BD /* XHSegmentItem.m in Sources */,
 				75ABB7812239143F00484E9E /* ViewController.m in Sources */,
 				75FB051A22393DA1002CD3BD /* MKMessagePhotoView.m in Sources */,
+				75FB0586223A72A1002CD3BD /* LoginViewController.m in Sources */,
 				75ABB7B922391E1200484E9E /* MainTabbarViewController.m in Sources */,
+				75FB058F223A7748002CD3BD /* GlobleStting.m in Sources */,
 				75ABB80E223920D400484E9E /* CustomBtn.m in Sources */,
+				75FB057A223A7110002CD3BD /* PhoneRegisterViewController.m in Sources */,
 				75ABB80D223920D400484E9E /* SQCustomButton.m in Sources */,
 				753D49732239296900A62B70 /* PYSearchConst.m in Sources */,
+				75FB0581223A7120002CD3BD /* GetPasswordViewController.m in Sources */,
 				75FB052422393DBA002CD3BD /* ZYQAssetPickerController.m in Sources */,
 				75FB054922394A9C002CD3BD /* UpdatePasswordViewController.m in Sources */,
 				75FB053322394A2B002CD3BD /* ADD_Address_ViewController.m in Sources */,
 				75FB054222394A5A002CD3BD /* InformationViewController.m in Sources */,
 				75FB053922394A38002CD3BD /* PInfoCell.m in Sources */,
+				75FB0571223A7104002CD3BD /* RegisterViewController.m in Sources */,
 				75ABB81C223921B000484E9E /* SearchController.m in Sources */,
 				75ABB7CE22391EA500484E9E /* MineViewController.m in Sources */,
 				75ABB8162239215600484E9E /* HomeCollectionViewCell.m in Sources */,
+				75FB0579223A7110002CD3BD /* ZhanghaoRegisterViewController.m in Sources */,
+				75FB0582223A7120002CD3BD /* PhoneGetPasswordViewController.m in Sources */,
 				75ABB78C2239144000484E9E /* main.m in Sources */,
 				7549DC0322393772000E515D /* Manager.m in Sources */,
 				75ABB7B322391D5600484E9E /* MainBaseViewController.m in Sources */,
@@ -795,6 +880,7 @@
 				75FB054D22394B40002CD3BD /* MyGuanZhuViewController.m in Sources */,
 				75ABB7B622391D7B00484E9E /* MainNavigationViewController.m in Sources */,
 				75ABB7C822391E8C00484E9E /* HomeViewController.m in Sources */,
+				75FB0583223A7120002CD3BD /* EmailGetPasswordViewController.m in Sources */,
 				75ABB77E2239143F00484E9E /* AppDelegate.m in Sources */,
 				753D49722239296900A62B70 /* PYSearchSuggestionViewController.m in Sources */,
 				75FB054622394A6E002CD3BD /* OrderViewController.m in Sources */,

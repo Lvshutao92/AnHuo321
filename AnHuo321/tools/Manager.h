@@ -24,6 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Manager : NSObject
 + (Manager *)sharedManager;
 
+
+
+
+
+
 //获取字符串的宽度
 +(float) widthForString:(NSString *)value fontSize:(float)fontSize andHeight:(float)height;
 //获得字符串的高度
