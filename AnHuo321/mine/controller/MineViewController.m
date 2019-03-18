@@ -44,7 +44,8 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     if ([GlobleStting getusername].length>0) {
-        
+        userImg.image = [UIImage imageNamed:@"tx"];
+        userName.text = [GlobleStting getusername];
     }else{
         userName.text = @"登录I注册";
         userImg.image = [UIImage imageNamed:@"tx"];

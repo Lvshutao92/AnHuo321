@@ -10,6 +10,8 @@
 #import "HomeModel.h"
 #import "HomeCollectionViewCell.h"
 #import "SearchController.h"
+#import "HomeDetailsViewController.h"
+#import "DetailsViewController.h"
 
 static NSString *headerViewIdentifier = @"hederview";
 
@@ -180,11 +182,11 @@ static NSString *headerViewIdentifier = @"hederview";
 #pragma mark  点击CollectionView触发事件
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    Model *model = [self.dataArray objectAtIndex:indexPath.row];
-//    GoodsViewController *goods = [[GoodsViewController alloc]init];
-//    goods.title = @"详情";
-//    goods.idString = model.productId;
-//    [self.navigationController pushViewController:goods animated:YES];
+    HomeModel *model = [self.dataArray objectAtIndex:indexPath.row];
+    DetailsViewController *goods = [[DetailsViewController alloc]init];
+    goods.title = @"详情";
+    goods.idString = model.productId;
+    [self.navigationController pushViewController:goods animated:YES];
 }
 
 
